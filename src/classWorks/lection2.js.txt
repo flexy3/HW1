@@ -1,0 +1,60 @@
+//Variables
+let variable = 20;
+let anotherVariable = "some string";
+console.log(variable, anotherVariable)
+
+//Data types
+let myNumber = 12345;
+let myString = "some string";
+let myBool = true;
+let myNull = null;
+let mySymbol = Symbol();
+let myUndef = undefined;
+console.log (myNumber, myString, myBool, myNull, mySymbol, myUndef)
+
+//Data types. Number ex1
+let a = 10;
+let b = 0xfffcc;
+let c = 0345;
+let d = 012348;
+let e = 12.45;
+let f = .89;
+let g = 1.24e4;
+let h = 1/0;
+let i = -1/0;
+console.log(a, b, c, d, e, f, g, h, i)
+
+//Data types. Number ex2
+let number = 4000;
+let newNumber = new Number(4000);
+console.log(typeof number, typeof newNumber, newNumber.toFixed(2), number.toFixed(2));
+
+//Arithmetic operators ex1
+let count = 10;
+console.log(++count, count, count++);
+
+//Arithmetic operators ex2
+let variable1 = 100;
+variable1 = variable1 + 20;
+let anotherVariable1 = 25;
+anotherVariable1 = anotherVariable1 * 4;
+console.log(variable1, anotherVariable1)
+
+//Arithmetic operators ex3
+console.log(5 < 10, 5 > 10, 10 >= 10, 8 <= 10, 10 === 10, 10 !== 10, 10 == "10", 10 === "10");
+
+//Data types.String ex1
+console.log("string", 'newString', 'anotherString', "this is my \"string\"")
+
+//Data types.String ex2
+let str = "new string";
+console.log(str[2]);
+
+//Data types.Boolean ex1
+console.log (5===6, 5===5)
+
+//Data types.Boolean ex2
+let num = 5;
+console.log(num && 10 + num);
+let prevString = "my String";
+let newStr = prevString || "default";
