@@ -58,3 +58,54 @@ let num = 5;
 console.log(num && 10 + num);
 let prevString = "my String";
 let newStr = prevString || "default";
+
+//Data types. Null & Undefined ex1
+let temp;
+let obj = {};
+let ar = [1,2,3];
+const func = () => {return};
+console.log(temp, obj.property, ar[3], func())
+
+//Data types. Null & Undefined ex2
+console.log(typeof null); 
+console.log(typeof undefined);
+console.log(null == undefined); 
+console.log(null === undefined);
+
+//Data types. Symbol ex1
+let symbol = Symbol();
+console.log(symbol );
+console.log(typeof symbol);
+
+//Data types. Symbol ex1 ex2
+let symbol1 = Symbol("name");
+console.log (symbol1);
+let anotherSymbol = Symbol("name"); 
+console.log(anotherSymbol);
+console.log(symbol === anotherSymbol)
+
+//Data types. Symbol. For 
+let symb = Symbol.for("name");
+let anothersymb = Symbol.for("name");
+console.log(symb, anothersymb, symb === anothersymb)
+
+//Data types. Symbol. keyFor
+let symbol2 = Symbol.for("name");
+let name = Symbol.keyFor(symbol2);
+console.log(name)
+
+//Data types. Symbol. keyFor 2
+//let user = { userName: "Vasya", [Symbol('password')]: "asdf" }
+//console.log(user .password);
+//console.log(Object.keys(user));
+//console.log(Object.getOwnPropertyName(user));
+//let password = user [Symbol.for('password')];
+//console.log( password );
+
+//
+let password = Symbol(); 
+let user = { userName: "Vasya", [ password ]: "“asdf”" }
+console.log(user)
+
+//
+console.log(typeof Number, typeof typeof null)
