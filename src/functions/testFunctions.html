@@ -6,9 +6,11 @@
     <title>Document</title>
 </head>
 <body>
-    <script src="./task1.js"></script>   
+    <script src="./task2.js"></script>
+
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/mocha/2.1.0/mocha.css">
 <script src="https://cdnjs.cloudflare.com/ajax/libs/mocha/2.1.0/mocha.js"></script>
+
 <script>
   mocha.setup('bdd');
 </script>
@@ -19,15 +21,17 @@
   var assert = chai.assert;
 </script>
 
-
 <div id="mocha"></div>
+
 <script>
-describe ("f1", function (){
-    it("передаем 5, 3, 9, 7, 2", function() {
-        assert.equal(f1(5, 3, 9, 7, 2), 3);
-    });
-    });
-    </script>   
+
+    describe("convertor", function (){
+      it(" ", function(){
+        assert.equal(convertor(430), 'четыреста тридцать');
+      });
+    }); 
+  </script>
+
 <script>
   mocha.run();
 </script>
